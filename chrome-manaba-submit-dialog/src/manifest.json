@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "manaba_dialog",
+  "version": "1.0",
+  "description": "manabaにて「追加する」「提出」「コメントを投稿」ボタンを押したときに確認ダイアログを表示してくれます。",
+  "icons": {
+    "16": "icon-16px.png",
+    "48": "icon-48px.png",
+    "128": "icon-128px.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://room.chuo-u.ac.jp/ct/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
